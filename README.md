@@ -29,3 +29,11 @@ Extend gcc/clang to allow inline-lisp for manipulating the AST.
 Areas: Compilers
 
 Difficulty: 9/10 (estimated)
+
+## Cleansed tree
+
+Implement a Gomory-Hu tree. Use https://github.com/munificent/vigil as programming language. 
+
+Areas: Data Structures
+
+Difficulty: 6/10 (estimated)
