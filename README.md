@@ -21,6 +21,7 @@ Areas: Systems Programming, Brainfuck
 
 Difficulty: 11/10 (estimated)
 
+When implementing a custom compiler instead of writing "raw" brainfuck: 8.5/10
 
 ## Parse tree manipulation extension for C++
 
