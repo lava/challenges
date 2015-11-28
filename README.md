@@ -9,7 +9,7 @@ and a user-space API to think about.
 
 Areas: Networking, Kernel
 
-Difficulty: 5/10 (estimated)
+Estimated difficulty: 5/10
 
 
 ## Echo daemon in brainfuck
@@ -19,9 +19,9 @@ Use http://github.com/lava/amd64-bf as programming language.
 
 Areas: Systems Programming, Brainfuck
 
-Difficulty: 11/10 (estimated)
+Estimated difficulty: 11/10
 
-When implementing a custom compiler instead of writing "raw" brainfuck: 8.5/10
+Estimated difficulty when implementing a custom toolchain instead of writing "raw" brainfuck: 8.5/10 (estimated)
 
 ## Parse tree manipulation extension for C++
 
@@ -29,7 +29,7 @@ Extend gcc/clang to allow inline-lisp for manipulating the AST.
 
 Areas: Compilers
 
-Difficulty: 9/10 (estimated)
+Estimated difficulty: 9/10
 
 ## Cleansed tree
 
@@ -37,4 +37,12 @@ Implement a Gomory-Hu tree. Use https://github.com/munificent/vigil as programmi
 
 Areas: Data Structures
 
-Difficulty: 6/10 (estimated)
+Estimated difficulty: 6/10
+
+## Vigilant C/C++
+
+Create a version of vigil that handles C/C++ source files. Bonus points if sinful functions can also be removed from compiled libraries, to protect users from their harmful effects.
+
+Areas: ABI, Linker
+
+Estimated difficulty: 4/10
