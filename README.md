@@ -11,6 +11,14 @@ Areas: Networking, Kernel
 
 Estimated difficulty: 5/10
 
+## Native linker and interpreter for brainfuck
+
+Create a brainfuck linker that generates valid ELF executables.
+
+Areas: Linking, ABI
+
+Solutions:
+  github.com/lava/amd64-bf : Difficulty 3/10. Author's comment: Creating the ELF is relatively straightforward, and interpreting brainfuck is trivial. The trickiest part is to write the startup code for the interpreter in assembler, which requires learning a bit about relocations and the libc bootstrapping if you never did this stuff.
 
 ## Echo daemon in brainfuck
 
