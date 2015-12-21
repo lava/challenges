@@ -54,3 +54,11 @@ Create a version of vigil that handles C/C++ source files. Bonus points if sinfu
 Areas: ABI, Linker
 
 Estimated difficulty: 4/10
+
+## Reversed function calls
+
+Create a programming language where functions can only take one argument, but return an arbitrary number of arguments.
+
+Areas: Compilers, ABI
+
+Estimated difficulty: 5/10 - 10/10, depending on how many other features the programming language will have.
