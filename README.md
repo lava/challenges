@@ -29,7 +29,7 @@ Areas: Systems Programming, Brainfuck
 
 Estimated difficulty: 11/10
 
-Estimated difficulty when implementing a custom toolchain instead of writing "raw" brainfuck: 8.5/10 (estimated)
+Estimated difficulty when implementing a custom toolchain instead of writing "raw" brainfuck: 8.5/10
 
 ## Parse tree manipulation extension for C++
 
@@ -57,8 +57,8 @@ Estimated difficulty: 4/10
 
 ## Reversed function calls
 
-Create a programming language where functions can only take one argument, but return an arbitrary number of arguments.
+Create a programming language where functions can only take one argument, but return an arbitrary number of arguments. Then implement some well-known recursive algorithms in that language.
 
 Areas: Compilers, ABI
 
-Estimated difficulty: 5/10 - 10/10, depending on how many other features the programming language will have.
+Estimated difficulty: 5/10 - 10/10, depending on how many other features the programming language will have and the choice of algorithms.
