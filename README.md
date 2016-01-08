@@ -62,3 +62,16 @@ Create a programming language where functions can only take one argument, but re
 Areas: Compilers, ABI
 
 Estimated difficulty: 5/10 - 10/10, depending on how many other features the programming language will have and the choice of algorithms.
+
+## Fractional arrays
+
+Compose a proposal to include fractional arrays into the ISO C++ standard.
+
+    int arr[3.5]; // accessing the upper 16 bits of arr[3] results in undefined behaviour
+    std::fill(arr[1.3], arr[1.6], 1); // set the middle bits of arr[1] to 1
+    
+Do not actually propose this to the committee. Bonus points for a sample implementation.
+
+Estimated difficulty: 5/10
+
+Areas: Technical Writing, ABI
