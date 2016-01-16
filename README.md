@@ -29,9 +29,7 @@ Random ideas for projects. Feel free to submit pull requests adding more, the on
     
     acc = 
     seq := $(foreach x,$(blanks),$(or $(eval acc += z),$(words $(acc))))
-    pattern = $(patsubst %5,Buzz,\
-              $(patsubst 3%,Fizz,\
-              $(patsubst 35,FizzBuzz,\
+    pattern = $(patsubst %5,Buzz, $(patsubst 3%,Fizz, $(patsubst 35,FizzBuzz,\
               $(join $(subst _ _ _,1 2 3,$(blanks)), $(subst _ _ _ _ _,1 2 3 4 5,$(blanks))))))
 
     fizzbuzz:
