@@ -2,6 +2,26 @@
 
 Random ideas for projects. Feel free to submit pull requests adding more, the only requirement is being neither useful nor realistic ;) Please let me know if you manage to do one of these and I'll add a link to your source.
 
+## FizzBuzz in GNU make
+
+    n = 100
+    blanks != printf %$(n)s | sed 's/ /_ /g'
+    
+    acc = 
+    seq := $(foreach x,$(blanks),$(or $(eval acc += z),$(words $(acc))))
+    pattern = $(patsubst %5,Buzz,\
+              $(patsubst 3%,Fizz,\
+              $(patsubst 35,FizzBuzz,\
+              $(join $(subst _ _ _,1 2 3,$(blanks)), $(subst _ _ _ _ _,1 2 3 4 5,$(blanks))))))
+
+    fizzbuzz:
+        @echo -e $(foreach num,$(seq),\
+	         $(if $(findstring zz,$(word $(num),$(pattern))),\
+	             $(word $(num),$(pattern)),\
+	             $(word $(num),$(seq)))\\n)
+
+Difficulty: 2/10. Authors comment: Bonus points if someone can figure out a way to generate `blanks` without cheating.
+
 ## Implement RFC5841 - TCP option to denote packet mood
 
 Embedding the mood itself should be easy enough, but there are a lot of details to get correct
