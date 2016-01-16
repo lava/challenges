@@ -7,7 +7,11 @@ Random ideas for projects. Feel free to submit pull requests adding more, the on
     n = 100
 
     ten-times = $(1) $(1) $(1) $(1) $(1) $(1) $(1) $(1) $(1) $(1)
-    stretch = $(subst 1,1 ,$(subst 2,2 ,$(subst 3,3 ,$(subst 4,4 ,$(subst 5,5 ,$(subst 6,6 ,$(subst 7,7 ,$(subst 8,8 ,$(subst 9,9 ,$(subst 0,0 ,$(1)))))))))))
+    
+    stretch = $(subst 1,1 ,$(subst 2,2 ,$(subst 3,3 ,$(subst 4,4 ,\
+              $(subst 5,5 ,$(subst 6,6 ,$(subst 7,7 ,$(subst 8,8 ,\
+              $(subst 9,9 ,$(subst 0,0 ,$(1)))))))))))
+
     convert-digit = \
       $(subst 0,,\
       $(subst 1,_,\
@@ -19,6 +23,7 @@ Random ideas for projects. Feel free to submit pull requests adding more, the on
       $(subst 7,_ _ _ _ _ _ _,\
       $(subst 8,_ _ _ _ _ _ _ _,\
       $(subst 9,_ _ _ _ _ _ _ _ _,$(1)))))))))))
+     
     to-unary = $(if $(word 1,$(2)),\
          $(call to-unary,\
            $(call ten-times,$(1)) $(call convert-digit,$(word 1,$(2))),\
@@ -29,6 +34,7 @@ Random ideas for projects. Feel free to submit pull requests adding more, the on
     
     acc = 
     seq := $(foreach x,$(blanks),$(or $(eval acc += z),$(words $(acc))))
+    
     pattern = $(patsubst %5,Buzz, $(patsubst 3%,Fizz, $(patsubst 35,FizzBuzz,\
               $(join $(subst _ _ _,1 2 3,$(blanks)), $(subst _ _ _ _ _,1 2 3 4 5,$(blanks))))))
 
