@@ -40,7 +40,7 @@ Random ideas for projects. Feel free to submit pull requests adding more, the on
 	             $(word $(num),$(pattern)),\
 	             $(word $(num),$(seq)))\\n)
 
-Difficulty: 2/10. Authors comment: Bonus points if someone can figure out a way to generate `blanks` without cheating.
+Difficulty: 2/10. Authors comment: Bonus points if someone can generate `ten-times` and `stretch` with a foreach loop. 
 
 ## Implement RFC5841 - TCP option to denote packet mood
 
