@@ -73,7 +73,7 @@ Areas: Systems Programming, Brainfuck
 
 Estimated difficulty: 11/10
 
-Estimated difficulty when implementing a custom toolchain instead of writing "raw" brainfuck: 8.5/10
+Estimated difficulty when writing a brainfuck-transpiler instead of writing "raw" brainfuck: 8.5/10
 
 ## Parse tree manipulation extension for C++
 
