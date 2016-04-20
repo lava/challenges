@@ -119,3 +119,10 @@ Do not actually propose this to the committee. Bonus points for a sample impleme
 Estimated difficulty: 5/10
 
 Areas: Technical Writing, ABI
+
+## cppscript
+Patch your browser of choice to support the `<script type="text/c++">` tag for inline c++.
+
+Estimated difficulty: 9/10
+
+Areas: Browsers, Virtual Machines, Compilers
