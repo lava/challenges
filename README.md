@@ -71,9 +71,9 @@ Use http://github.com/lava/amd64-bf as programming language.
 
 Areas: Systems Programming, Brainfuck
 
-Estimated difficulty: 11/10
+Estimated difficulty: 11/10 for doing everything by hand, 8.5/10 when 
 
-Estimated difficulty when writing a brainfuck-transpiler instead of writing "raw" brainfuck: 8.5/10
+Estimated difficulty when writing a brainfuck-transpiler instead of writing "raw" brainfuck: 
 
 ## Parse tree manipulation extension for C++
 
@@ -114,7 +114,7 @@ Compose a proposal to include fractional arrays into the ISO C++ standard.
     int arr[3.5]; // accessing the upper 16 bits of arr[3] results in undefined behaviour
     std::fill(arr[1.3], arr[1.6], 1); // set the middle bits of arr[1] to 1
     
-Do not actually propose this to the committee. Bonus points for a sample implementation.
+Bonus points for a sample implementation.
 
 Estimated difficulty: 5/10
 
@@ -126,3 +126,13 @@ Patch your browser of choice to support the `<script type="text/c++">` tag for i
 Estimated difficulty: 9/10
 
 Areas: Browsers, Virtual Machines, Compilers
+
+## Red pill
+Extend a virtual machine with an escape mechanism. The VM would run with full privileges and emulate the same OS and
+hardware as the host system. When the mechanism is triggered from inside the VM, the inner OS and code should be transferred 
+live to the host system and and continue to run on the bare metal.
+Bonus points if the outer OS is running in a VM afterwards.
+
+Estimated difficulty: 10/10
+
+Areas: Kernel, Hot-patching, Hardware drivers
